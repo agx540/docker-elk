@@ -1,8 +1,14 @@
 apm-server:
-  host: 0.0.0.0:8200
-
+  host: "0.0.0.0:8200"
+  # rum:
+  #   source_mapping:
+  #     elasticsearch:
+  #     hosts: ["localhost:9200"]
+  #     username: "elastic"
+  #     password: "changeme"
 output:
   elasticsearch:
-    hosts: ['http://elasticsearch:9200']
-    username: elastic
-    password: changeme
+    enabled: true
+    hosts: ["elasticsearch:9200"]
+    username: "elastic"
+    password: "changeme"

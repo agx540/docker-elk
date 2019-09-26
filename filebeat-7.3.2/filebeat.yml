@@ -1,0 +1,15 @@
+filebeat.inputs:
+- type: log
+  # Change to true to enable this input configuration.
+  enabled: true
+  # Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    - .\filebeat-7.3.2\exampleData\logstash-tutorial.log
+    #- c:\programdata\elasticsearch\logs\*
+
+
+output.logstash:
+  # The Logstash hosts
+  hosts: ["localhost:5044"]
+
+

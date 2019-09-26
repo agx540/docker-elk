@@ -1,0 +1,1 @@
+.\filebeat-7.3.2\filebeat.exe -e -c .\filebeat-7.3.2\filebeat.yml -d "publish"
