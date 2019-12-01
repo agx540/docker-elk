@@ -1,0 +1,10 @@
+Error response from daemon: 
+OCI runtime create failed: 
+container_linux.go:346: 
+starting container process caused "process_linux.go:449: 
+container init caused 
+\"rootfs_linux.go:58: mounting \\\"/prometheus.yml\\\" 
+to rootfs \\\"/var/lib/docker/overlay2/99c9b275fdbd388781b2af609ee0818c97f753f291d7ef4a8234af5caa50944f/merged\\\" 
+at \\\"/var/lib/docker/overlay2/99c9b275fdbd388781b2af609ee0818c97f753f291d7ef4a8234af5caa50944f/merged/etc/prometheus/prometheus.yml\\\" 
+caused \\\"not a directory\\\"\"": 
+unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type.
