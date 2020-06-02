@@ -1,11 +1,17 @@
 apm-server:
   host: "0.0.0.0:8200"
-  # rum:
-  #   source_mapping:
-  #     elasticsearch:
-  #     hosts: ["localhost:9200"]
-  #     username: "elastic"
-  #     password: "changeme"
+  rum:
+    enabled: true
+    event_rate:
+      limit: 300
+      lru_size: 1000
+    allow_origins: ['*']
+    source_mapping:
+      enabled: true
+      cache:
+        expiration: 5m
+      index_pattern: "apm-*-sourcemap*"
+
 output:
   elasticsearch:
     enabled: true
